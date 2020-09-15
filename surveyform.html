@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC survey form</title>
+    <link rel="stylesheet" href="surveyform.css">
+</head>
+<body>
+    <h1>free code camp survey form</h1>
+    <p class="blurb">Thank you for taking the time to help us improve our platform</p>
+    <form>
+        <label for="name">Name</label>
+        <input class="input" type="text" id="name" placeholder="Your first name" required></input>
+
+        <label for="email">Email</label>
+        <input class="input" type="email" id="email" placeholder="example@gmail.com" required></input>
+        
+        <label for="age">Age (optional)</label>
+        <input class="input" type="number" id="age" placeholder="for example: 15"></input>
+
+        <label>Which option best describes your current rule</label>
+        <select required id="dropdown" placeholder="your current rule">
+            <option disabled selected value>your current rule</option>
+            <option>Student</option>
+            <option>Full time job</option>
+            <option>Full time learner</option>
+            <option>Prefer not to say</option>
+            <option>Others</option>
+        </select>
+
+        
+        <fieldset required id="recommendation">
+            
+            
+            <label>Would you recommend free code camp to a friend ?</label>
+        <div>
+            <input class="radio" type="radio"  name="definitely" checked><label for="definitely" class="label">Definitely</label></input>
+        </div>
+        <div>  
+        <input class="radio" type="radio"  name="definitely"><label for="maybe" class="label">May be</label></input>
+        </div>
+        <div>
+        <input class="radio" type="radio"  name="definitely"><label for="notsure" class="label">Not sure</label></input>
+        </div>
+
+        </fieldset>
+       
+        <label>What is your favourite feature of free code camp</label>
+        <select required id="dropdown">
+            <option disabled selected value>Select your option</option>
+            <option>Challenges</option>
+            <option>Community</option>
+            <option>Open sources</option>
+            <option>Projects</option>
+        </select>
+
+        <fieldset id="recommendation">
+            <label>What would you like to see improved? (Check all that apply)</label>
+            <div> <input  type="checkbox" name="improved" id="projects"><label for="projects" > Projects </label></input></div>
+            <div> <input  type="checkbox" name="improved" id="back-end"><label for="back-end"> Back-end Project</label></input></div>
+            <div> <input  type="checkbox" name="improved" id="data"><label for="data"> Data visualization</label></input></div>
+            <div> <input  type="checkbox" name="improved" id="Challenges"><label for="Challenges"> Challenges</label></input></div>
+            <div> <input  type="checkbox" name="improved" id="open"><label for="open"> Open Source community</label></input></div>
+            <div> <input  type="checkbox" name="improved" id="Gitter"><label for="Gitter"> Gitter help room</label></input></div>
+            <div> <input  type="checkbox" name="improved" id="videos"><label for="videos"> Videos</label></input></div>
+            <div> <input  type="checkbox" name="improved" id="citymeetups" ><label for="citymeetups"> City Meetups</label></input></div>
+            <div> <input  type="checkbox" name="improved" id="wiki"><label for="wiki"> Wiki</label></input></div>
+            <div> <input  type="checkbox" name="improved" id="forum"><label for="forum"> Forum</label></input></div>
+            <div> <input  type="checkbox" name="improved" id="additionalcourses"><label for="additionalcourses"> Additional Courses</label></input></div>
+
+        </fieldset>
+
+        <label for="text-area">Any suggestions?</label>
+        <div>
+        <textarea placeholder="Enter your comments"></textarea>
+        </div>
+        <input class="input" type="submit" class="submit">
+    </form>
+</body>
+</html>
